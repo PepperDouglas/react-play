@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled, { css } from 'styled-components';
 
 export default function Arr3Div() {
@@ -13,7 +13,7 @@ export default function Arr3Div() {
     const [data, setData] = useState([54, 23, 76, 123, 93, 7, 3489, 88]);
     const [mutableData, setMutable] = useState(data);
     let [counter, adder] = useState(0);
-    let [total, totalSum] = useState(0);
+    const [total, totalSum] = useState([]);
 
     const transformData = () => {
         adder(counter < 6 ? counter += 1 : counter = 0);
@@ -22,40 +22,27 @@ export default function Arr3Div() {
                 setMutable(data);
                 break;
             case 1:
-                //medelvärdet
-                function redFn(a, b){
-                    return a + b;
-                }
-                const sum = data.reduce(redFn);
-                totalSum(sum);
-                alert(total);
-                const avg = total / data.length;
-                setMutable([avg]);
+                const sum = data.reduce((a, b) => a + b);
+                const avg = sum / data.length;
+                const message = Number.isInteger(avg) ? "Exactly: " : "Aprox: ";
+                setMutable([message + avg.toFixed(0)]);
                 break;
             case 2:
-                //Ta fram det största av alla tal 
-                setMutable([(data.filter(band => band[0] === "M")).length]);
+                setMutable([Math.max(...data)]);
                 break;
             case 3:
-                //Beräkna summan av alla tal
-                setMutable((data.filter(band => band.length > 10)).toSorted((a, b) => {
-                    return a.localeCompare(b);
-                }));
+                setMutable([data.reduce((a, b) => a + b)]);
                 break;
             case 4:
-                //Ta fram summan av alla tal större än 70
-                setMutable(data.toSorted((a, b) => b.length - a.length));
+                setMutable([data.filter(num => num > 70).reduce((a, b) => a + b)]);
                 break;
             case 5:
-                //Ta fram alla jämna tal 
-                setMutable(data.toSorted((a, b) => b.length - a.length));
+                setMutable(data.filter(num => num % 2 === 0));
                 break;
             case 6:
-                //ny array från denna array där alla värden ökats med 2
-                setMutable(data.toSorted((a, b) => b.length - a.length));
+                setMutable(data.map(num => num + 2));
                 break;
         }
-        //setData([...data, counter + ',']) ;
     };
 
     const liMapper = ((array) => {
