@@ -13,6 +13,7 @@ export default function Arr3Div() {
     const [data, setData] = useState([54, 23, 76, 123, 93, 7, 3489, 88]);
     const [mutableData, setMutable] = useState(data);
     let [counter, adder] = useState(0);
+    //Why doesn't having the next useState as a middle-hand work for case 1?
     const [total, totalSum] = useState([]);
 
     const transformData = () => {
