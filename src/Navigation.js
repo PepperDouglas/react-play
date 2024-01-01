@@ -2,7 +2,10 @@ import { NavLink } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 const Navigation = () => {
-    return (<nav>
+    const Nav = styled.nav`
+        display: inline-flex;
+    `
+    return (<Nav>
         <ul>
             <li><NavLink to='/'>Counter</NavLink></li>
             <li><NavLink to='/chesscontainer'>Chesser</NavLink></li>
@@ -12,7 +15,16 @@ const Navigation = () => {
             <li><NavLink to='/arrprac3'>Numbers</NavLink></li>
             <li><NavLink to='/arrprac4'>Countries</NavLink></li>
         </ul>
-    </nav>);
+        <ul>
+            <li><NavLink to='/messagecomp'>Props</NavLink></li>
+            <li><NavLink to='/stylingcomp'>Styling</NavLink></li>
+            <li><NavLink to='/e'>e</NavLink></li>
+            <li><NavLink to='/r'>r</NavLink></li>
+            <li><NavLink to='/a'>a</NavLink></li>
+            <li><NavLink to='/s'>s</NavLink></li>
+            <li><NavLink to='/d'>d</NavLink></li>
+        </ul>
+    </Nav>);
 }
 
 export default Navigation;
