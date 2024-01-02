@@ -9,6 +9,7 @@ import Arr3Div from './ArrPrac/Arr3Div';
 import Arr4Div from './ArrPrac/Arr4Div';
 import MessageComp from './ReactPrac/MessageComp';
 import StylingComp from './ReactPrac/StylingComp';
+import StarWars from './ReactPrac/StarWars';
 
 const Main = () => {
     return (<Routes>
@@ -25,6 +26,7 @@ const Main = () => {
         <Route path='/stylingcomp' element={<StylingComp  color="blue"
             flag={flagprop} colors={colorScheme}/>}> 
         </Route>
+        <Route path='/starwars' element={<StarWars personId={1}/>}> </Route>
     </Routes>);
 }
 
