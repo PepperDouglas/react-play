@@ -19,10 +19,10 @@ const Navigation = () => {
             <li><NavLink to='/messagecomp'>Props</NavLink></li>
             <li><NavLink to='/stylingcomp'>Styling</NavLink></li>
             <li><NavLink to='/starwars'>Star Wars</NavLink></li>
-            <li><NavLink to='/r'>r</NavLink></li>
-            <li><NavLink to='/a'>a</NavLink></li>
-            <li><NavLink to='/s'>s</NavLink></li>
-            <li><NavLink to='/d'>d</NavLink></li>
+            <li><NavLink to='/eventref'>Event&Ref</NavLink></li>
+            <li><NavLink to='/a'>Temp</NavLink></li>
+            <li><NavLink to='/s'>Temp</NavLink></li>
+            <li><NavLink to='/d'>Temp</NavLink></li>
         </ul>
     </Nav>);
 }

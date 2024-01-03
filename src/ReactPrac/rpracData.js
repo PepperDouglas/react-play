@@ -18,10 +18,15 @@ let colorScheme = [
     "#3358FF", "#FF5733", "#FF6663", "#850000", "#76281F", "#FF57DE"
 ];
 
+let userNames = [
+    "Greger", "Alicia", "Vladimir", "Oleg", "Semen", "Alfred"
+];
+
 export {
     fruits,
     contacts,
     news,
     flagprop,
-    colorScheme
+    colorScheme,
+    userNames
 }

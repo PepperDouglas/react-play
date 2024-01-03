@@ -10,6 +10,7 @@ import Arr4Div from './ArrPrac/Arr4Div';
 import MessageComp from './ReactPrac/MessageComp';
 import StylingComp from './ReactPrac/StylingComp';
 import StarWars from './ReactPrac/StarWars';
+import EventRef from './ReactPrac/EventRef';
 
 const Main = () => {
     return (<Routes>
@@ -27,6 +28,7 @@ const Main = () => {
             flag={flagprop} colors={colorScheme}/>}> 
         </Route>
         <Route path='/starwars' element={<StarWars personId={1}/>}> </Route>
+        <Route path='/eventref' element={<EventRef />}> </Route> 
     </Routes>);
 }
 
