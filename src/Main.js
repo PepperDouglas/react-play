@@ -11,6 +11,7 @@ import MessageComp from './ReactPrac/MessageComp';
 import StylingComp from './ReactPrac/StylingComp';
 import StarWars from './ReactPrac/StarWars';
 import EventRef from './ReactPrac/EventRef';
+import FetchDemo from './ReactPrac/FetchDemo';
 
 const Main = () => {
     return (<Routes>
@@ -28,7 +29,9 @@ const Main = () => {
             flag={flagprop} colors={colorScheme}/>}> 
         </Route>
         <Route path='/starwars' element={<StarWars personId={1}/>}> </Route>
-        <Route path='/eventref' element={<EventRef />}> </Route> 
+        <Route path='/eventref' element={<EventRef />}> </Route>
+        <Route path='/fetchdemo' element={<FetchDemo player="dsebom"/>}> </Route> 
+
     </Routes>);
 }
 
