@@ -1,10 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import StyleDiv from './StyleDiv';
-import DataContainer from './prac';
-import ChessContainer from './chessContainer';
-import Navigation from './Navigation';
-import Main from './Main';
+import Navigation from './Nav/Navigation';
+import Main from './Nav/Main';
 
 function App() {
   return (
@@ -12,7 +9,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          <code>Plague Doctussy</code> Productions
+          <code>Plague Doctor</code> Productions
         </p>
         <a
           className="App-link"

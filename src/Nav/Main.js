@@ -1,17 +1,17 @@
 import { Switch, Route, Routes } from 'react-router-dom';
-import { fruits, contacts, news, flagprop, colorScheme } from './ReactPrac/rpracData';
-import DataContainer from './prac';
-import ChessContainer from './chessContainer';
-import StyleDiv from './StyleDiv';
-import Arr1Div from './ArrPrac/Arr1Div';
-import Arr2Div from './ArrPrac/Arr2Div';
-import Arr3Div from './ArrPrac/Arr3Div';
-import Arr4Div from './ArrPrac/Arr4Div';
-import MessageComp from './ReactPrac/MessageComp';
-import StylingComp from './ReactPrac/StylingComp';
-import StarWars from './ReactPrac/StarWars';
-import EventRef from './ReactPrac/EventRef';
-import FetchDemo from './ReactPrac/FetchDemo';
+import { fruits, contacts, news, flagprop, colorScheme } from '../ReactPrac/rpracData';
+import DataContainer from '../RandPrac/prac';
+import ChessContainer from '../RandPrac/chessContainer';
+import StyleDiv from '../RandPrac/StyleDiv';
+import Arr1Div from '../ArrPrac/Arr1Div';
+import Arr2Div from '../ArrPrac/Arr2Div';
+import Arr3Div from '../ArrPrac/Arr3Div';
+import Arr4Div from '../ArrPrac/Arr4Div';
+import MessageComp from '../ReactPrac/MessageComp';
+import StylingComp from '../ReactPrac/StylingComp';
+import StarWars from '../ReactPrac/StarWars';
+import EventRef from '../ReactPrac/EventRef';
+import FetchDemo from '../ReactPrac/FetchDemo';
 
 const Main = () => {
     return (<Routes>
