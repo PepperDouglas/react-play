@@ -39,7 +39,7 @@ export default function FetchDemo(props) {
 
     const liMapper = () => {
         return(
-            <div>
+            <React.Fragment>
                 <label>Ange namn på ett land </label>
                 <input type="text" ref={countryInput}></input>
                 <br></br>
@@ -47,7 +47,7 @@ export default function FetchDemo(props) {
                 <br></br>
                 <p>{data}</p>
                 <img src={flag}></img>
-            </div>
+            </React.Fragment>
         )
     }
 
