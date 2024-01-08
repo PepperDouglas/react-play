@@ -22,7 +22,7 @@ const Navigation = () => {
             <li><NavLink to='/eventref'>Event&Ref</NavLink></li>
             <li><NavLink to='/fetchdemo'>FetchDemo</NavLink></li>
             <li><NavLink to='/advcounter'>Adv. Counting</NavLink></li>
-            <li><NavLink to='/d'>Temp</NavLink></li>
+            <li><NavLink to='/todo'>To-do List</NavLink></li>
         </ul>
     </Nav>);
 }
