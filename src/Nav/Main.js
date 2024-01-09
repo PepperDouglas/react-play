@@ -14,6 +14,7 @@ import EventRef from '../ReactPrac/EventRef';
 import FetchDemo from '../ReactPrac/FetchDemo';
 import AdvCounter from '../ReactPrac/AdvCounter';
 import ToDo from '../ReactPrac/ToDo';
+import TuesDemo from '../Demos/TuesDemo';
 
 const Main = () => {
     return (<Routes>
@@ -35,6 +36,8 @@ const Main = () => {
         <Route path='/fetchdemo' element={<FetchDemo player="dsebom"/>}> </Route> 
         <Route path='/advcounter' element={<AdvCounter />}> </Route>
         <Route path='/todo' element={<ToDo />}> </Route>
+        <Route path='/tuesdemo' element={<TuesDemo />}> </Route>
+
     </Routes>);
 }
 
