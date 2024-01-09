@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import styled, { css } from 'styled-components';
 
-export default function TuesDemo() {
+export default function TicTac() {
     const Div = styled.div`
         background: transparent;
         border-radius: 3px;
@@ -11,7 +11,7 @@ export default function TuesDemo() {
         padding: 0.25em 1em;
     `
 
-    const [data, setData] = useState([]);
+    const [data, setData] = useState([" ", " ", " ", " ", " ", " ", " ", " ", " "]);
     const inputs = useRef();
     let [counter, adder] = useState(0);
 
@@ -20,6 +20,22 @@ export default function TuesDemo() {
         adder(counter < 2 ? counter += 1 : counter = 0);
     };
 
+    const renderBoard = () => {
+        const view = [[], [], []];
+        for(let i = 0; i < 3; i++){          
+            for(let j = 0; j < 3; i++){
+                view[i].push(<button>{data[j]}</button>);
+            }
+        }
+        return(
+            <div>
+                <div>{view[0]}</div>
+                <div>{view[1]}</div>
+                <div>{view[2]}</div>
+            </div>
+        )
+    }
+
     //Every sub-part of the component that will be presented
     const liMapper = (() => {
         switch(counter){
@@ -27,7 +43,7 @@ export default function TuesDemo() {
                 return (
                     <>
                         <p>First comp</p>
-                        
+                        {renderBoard()}
                     </>
             );
             case 1:

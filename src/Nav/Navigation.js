@@ -25,7 +25,7 @@ const Navigation = () => {
             <li><NavLink to='/todo'>To-do List</NavLink></li>
         </ul>
         <ul>
-            <li><NavLink to='/tuesdemo'>Tuesday Demo</NavLink></li>
+            <li><NavLink to='/tictac'>Tic-Tac</NavLink></li>
         </ul>
     </Nav>);
 }
