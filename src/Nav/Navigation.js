@@ -27,6 +27,7 @@ const Navigation = () => {
         <ul>
             <li><NavLink to='/tictac'>Tic-Tac</NavLink></li>
             <li><NavLink to='/todocontainer'>ToDoTwo</NavLink></li>
+            <li><NavLink to='/routing'>Routing</NavLink></li>
 
         </ul>
     </Nav>);
