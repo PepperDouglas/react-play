@@ -15,6 +15,7 @@ import FetchDemo from '../ReactPrac/FetchDemo';
 import AdvCounter from '../ReactPrac/AdvCounter';
 import ToDo from '../ReactPrac/ToDo';
 import TicTac from '../Demos/TicTac';
+import TodoTwo from '../containers/TodoContainer/TodoContainer.jsx';
 
 const Main = () => {
     return (<Routes>
@@ -37,7 +38,7 @@ const Main = () => {
         <Route path='/advcounter' element={<AdvCounter />}> </Route>
         <Route path='/todo' element={<ToDo />}> </Route>
         <Route path='/tictac' element={<TicTac />}> </Route>
-
+        <Route path='/todocontainer' element={<TodoTwo />}> </Route>
     </Routes>);
 }
 

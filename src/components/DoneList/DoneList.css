@@ -1,0 +1,51 @@
+.todoDivStyle{width: 250px;
+
+    height: 350px;background-color: lightblue;border: "1px solid black";
+
+    padding: 2px;
+
+    float: left; 
+
+    font-family: sans-serif;
+
+    color: #999;
+
+    margin: 10px;
+
+    border-radius: 25px;
+
+  }
+
+    
+
+  
+
+  .todoDivStyle ul {
+
+    list-style: none;
+
+    padding-left: 0;
+
+    width: 230px;
+
+  } 
+
+  
+
+  
+
+  .todoDivStyle li {
+
+    color: #333;
+
+    background-color: rgba(255,255,255,.5);
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+
+    list-style: none;
+
+  }
